@@ -1,0 +1,71 @@
+.project {
+  background-color: #fff;
+  border: 1px solid #d5d5d5;
+  border-radius: 4px;
+  float: left;
+  min-height: 320px;
+  min-width: 270px;
+  padding: 20px;
+  position: relative;
+
+  & + & {
+  	margin-left: 30px;
+  }
+}
+
+.project__name {
+  font-size: 18px;
+  line-height: 18px;
+  margin: 0;
+}
+
+.project__footer {
+  bottom: 15px;
+  position: absolute;
+}
+
+.project__settings {
+  color: inherit;
+  i {
+    font-size: 16px;
+  }
+}
+
+.progress-table {
+  background-color: #e8eef2;
+  border-collapse: collapse;
+  border-radius: 50px;
+  border-spacing: 0;
+  height: 18px;
+  margin: 20px 0;
+  overflow: hidden;
+  width: 100%;
+}
+
+.project__assigned-list {
+  margin: 0;
+  padding: 0;
+  li {
+    color: #6f7c82;
+    font-size: 14px;
+    line-height: 22px;
+    list-style: none;
+    padding-left: 20px;
+    position: relative;
+  }
+}
+
+.project__assigned-status {
+  border-radius: 50px;
+  display: inline-block;
+  height: 12px;
+  left: 0;
+  position: absolute;
+  top: 5px;
+  width: 12px;
+}
+
+.project__assigned-to {
+  font-size: 14px;
+  margin: 0;
+}

@@ -1,0 +1,70 @@
+.btn {
+  border-radius: 3px;
+  color: inherit;
+  display: inline-block;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 7px 18px;
+  font-family: Whitney HTF, serif;
+  text-decoration: none;
+  border: none;
+  transition: background-color .2s ease;
+
+  & + & {
+    margin-left: 10px;
+  }
+}
+
+.btn-default--light {
+  background-color: #e0e0e0;
+  color: #444;
+
+  &:hover {
+    background-color: darken(#e0e0e0,5%);
+  }
+}
+
+.btn-default--dark {
+  background-color: #777;
+  color: #fff;
+  &:hover {
+    background-color: darken(#777,10%);
+  }
+}
+
+.btn--destroy {
+  background-color: #dc393c;
+  color: #fff;
+}
+
+.btn--create {
+  background-color: #45b73e;
+  color: #fff;
+}
+
+.btn--positive {
+  background-color: #468ee5;
+  color: #fff;
+}
+
+.btn--small {
+  font-size: 14px;
+}
+
+.btn--large {
+  font-size: 18px;
+  padding: 8px 13px;
+}
+
+.btn--xl {
+  font-size: 22px;
+  padding: 11px 16px;
+}
+
+.btn--dropdown {
+  padding: 8px 13px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}

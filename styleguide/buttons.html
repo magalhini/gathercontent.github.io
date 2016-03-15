@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GatherContent Styleguide</title>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/color-brewer.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>  <header class="top-bar">
+  <div class="grid">
+    <div class="grid__item two-tenths">
+      <img alt="GatherContent Logo" class="top-bar__logo" src=
+      "assets/img/logo.png">
+      <h1 class="top-bar__tag">GatherContent styleguide</h1>
+    </div><!--
+ --><div class="grid__item eight-tenths">
+      <nav class="nav nav--main">
+        <ul>
+          <li class="nav__item">
+            <a class="nav__link nav__link--light" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--light" href="#">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--light" href="#">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>  <main class="content">
+    <div class="grid">
+      <div class="grid__item one-quarter">
+  <aside class="sidebar">
+    <ul class="sidebar__list">
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="index.html">Introduction</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="palette.html">Colour Palette</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="typography.html">Typography</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="buttons.html">Buttons</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="forms.html">Forms</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="tables.html">Tables</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="notifications.html">Notifications</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="alerts.html">Alerts</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="miscellaneous.html">Miscellaneous</a>
+      </li>
+    </ul>
+  </aside>
+</div><!--   --><div class="grid__item three-quarters">
+        <span class="section__tag">Module</span>
+        <h1 class="section__header">Buttons</h1>
+        <h2 class="section__subheader">Default buttons</h2>
+        <p>The default buttons are for actions that are neither positive or negative, they simply complete an action. For instance, showing more recent activity on the Project Overview page.</p>
+        <div class="grid__item one-whole">
+          <h3 class="section__subheader">Examples</h3>
+          <a href="#" class="btn btn-default--light">Light button</a>
+          <a href="#" class="btn btn-default--dark">Dark button</a>
+          <pre class="html">
+            <code>&lt;a href="#" class="btn btn-default--light"&gt;Light button&lt;/a&gt;
+&lt;a href="#" class="btn btn-default--dark"&gt;Dark button&lt;/a&gt;</code>
+          </pre>
+        </div>
+        <hr>
+        <h2 class="section__subheader">Primary buttons</h2>
+        <p>Primary buttons are used to draw attention to primary actions, such as creating an item or applying a template. Primary buttons must use a colour from the primary palette.</p>
+        <div class="grid__item one-whole">
+          <h3 class="section__subheader">Examples</h3>
+          <a href="#" class="btn btn--create">Create Primary</a>
+          <a href="#" class="btn btn--destroy">Destroy Primary</a>
+          <a href="#" class="btn btn--positive">Neutral Primary</a>
+          <pre class="html">
+            <code>&lt;a href="#" class="btn btn--create"&gt;Create Primary&lt;/a&gt;
+&lt;a href="#" class="btn btn--destroy"&gt;Destroy Primary&lt;/a&gt;
+&lt;a href="#" class="btn btn--positive"&gt;Neutral Primary&lt;/a&gt;</code>
+          </pre>
+        </div>
+        <hr>
+        <h2 class="section__subheader">Modifiers</h2>
+        <p>Modifiers are used to alter shape and size, but <strong>never</strong> colour.</p>
+        <h3>Small button modifiers</h3>
+        <div class="grid__item one-whole">
+          <h3 class="section__subheader">Examples</h3>
+          <a href="#" class="btn btn--create btn--small">Create Primary small</a>
+          <a href="#" class="btn btn--destroy btn--small">Destroy Primary small</a>
+          <a href="#" class="btn btn--positive btn--small">Neutral Primary small</a>
+          <pre class="html">
+            <code>&lt;a href="#" class="btn btn--create btn--small"&gt;Create Primary small&lt;/a&gt;
+&lt;a href="#" class="btn btn--destroy btn--small"&gt;Destroy Primary small&lt;/a&gt;
+&lt;a href="#" class="btn btn--positive btn--small"&gt;Neutral Primary small&lt;/a&gt;</code>
+          </pre>
+        </div>
+        <hr>
+        <h3>Large button modifiers</h3>
+        <div class="grid__item one-whole">
+          <h3 class="section__subheader">Examples</h3>
+          <a href="#" class="btn btn--create btn--large">Create Primary large</a>
+          <a href="#" class="btn btn--destroy btn--large">Destroy Primary large</a>
+          <a href="#" class="btn btn--positive btn--large">Neutral Primary large</a>
+          <pre class="html">
+            <code>&lt;a href="#" class="btn btn--create btn--large"&gt;Create Primary large&lt;/a&gt;
+&lt;a href="#" class="btn btn--destroy btn--large"&gt;Destroy Primary large&lt;/a&gt;
+&lt;a href="#" class="btn btn--positive btn--large"&gt;Neutral Primary large&lt;/a&gt;</code>
+          </pre>
+        </div>
+        <hr>
+        <h3>Extra large button modifiers</h3>
+        <div class="grid__item one-whole">
+          <h3 class="section__subheader">Examples</h3>
+          <a href="#" class="btn btn--create btn--xl">Create Primary XL</a>
+          <a href="#" class="btn btn--destroy btn--xl">Destroy Primary XL</a>
+          <a href="#" class="btn btn--positive btn--xl">Neutral Primary XL</a>
+          <pre class="html">
+            <code>&lt;a href="#" class="btn btn--create btn--xl"&gt;Create Primary XL&lt;/a&gt;
+&lt;a href="#" class="btn btn--destroy btn--xl"&gt;Destroy Primary XL&lt;/a&gt;
+&lt;a href="#" class="btn btn--positive btn--xl"&gt;Neutral Primary XL&lt;/a&gt;</code>
+          </pre>
+        </div>
+        <hr>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

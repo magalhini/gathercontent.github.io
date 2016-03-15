@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>GatherContent Styleguide</title>
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/styles/color-brewer.min.css">
+  <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.1.0/highlight.min.js"></script>
+  <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+  <script src="assets/js/bootstrap.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+</head>
+<body>  <header class="top-bar">
+  <div class="grid">
+    <div class="grid__item two-tenths">
+      <img alt="GatherContent Logo" class="top-bar__logo" src=
+      "assets/img/logo.png">
+      <h1 class="top-bar__tag">GatherContent styleguide</h1>
+    </div><!--
+ --><div class="grid__item eight-tenths">
+      <nav class="nav nav--main">
+        <ul>
+          <li class="nav__item">
+            <a class="nav__link nav__link--light" href="#">Home</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--light" href="#">About</a>
+          </li>
+          <li class="nav__item">
+            <a class="nav__link nav__link--light" href="#">Sign up</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+</header>  <main class="content">
+    <div class="grid">
+      <div class="grid__item one-quarter">
+  <aside class="sidebar">
+    <ul class="sidebar__list">
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="index.html">Introduction</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="palette.html">Colour Palette</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="typography.html">Typography</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="buttons.html">Buttons</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="forms.html">Forms</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="tables.html">Tables</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="notifications.html">Notifications</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="alerts.html">Alerts</a>
+      </li>
+      <li class="sidebar__item">
+        <a class="sidebar__link" href="miscellaneous.html">Miscellaneous</a>
+      </li>
+    </ul>
+  </aside>
+</div><!--   --><div class="grid__item three-quarters">
+       <span class="section__tag">Component</span>
+        <h1 class="section__header">Forms</h1>
+        <p>100% of information submitted to our platform is done via forms, thus they're super important to keep consistent and recognisable across a plethora of contexts.</p>
+        <h2 class="section__subheader">Inputs</h2>
+        <div class="grid__item one-whole">
+          <h4>Text input</h4>
+          <input type="text" class="form__element form__input form__input--inline" placeholder="Item name">
+          <pre class="html">
+            <code>&lt;input type="text" class="form__element form__input form__input--inline" placeholder="Item name"&gt;</code>
+          </pre>
+          <hr>
+          <h4>Text input with label</h4>
+          <label for="item-name" class="form__label">Item name</label>
+          <input type="text" class="form__element form__input form__input--inline" placeholder="Item name">
+          <pre class="html">
+            <code>&lt;label for="item-name" class="form__label"&gt;Item name&lt;/label&gt;
+&lt;input type="text" class="form__element form__input form__input--inline" placeholder="Item name"&gt;</code>
+          </pre>
+          <hr>
+          <h4>Text input with helper</h4>
+          <input type="text" class="form__element form__input form__input--inline" placeholder="Item name">
+          <small class="form__microcopy">e.g. Article name, web page title</small>
+          <pre class="html">
+            <code>&lt;input type="text" class="form__element form__input form__input--inline" placeholder="Item name"&gt;
+&lt;small class="form__microcopy"&gt;e.g. Article name, web page title&lt;/small&gt;</code>
+          </pre>
+        </div>
+        <h2 class="section__subheader">Dropdowns</h2>
+        <h3 class="section__subheader">Examples</h3>
+        <div class="grid__item one-whole">
+          <h4>Standard dropdown menu</h4>
+          <div class="dropdown">
+            <button class="dropdown-toggle btn btn-default--light btn--dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Actions
+              <span class="dropdown__caret caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Apply a template</a>
+              </li>
+              <li class="dropdown__separator"></li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Assign people</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Set a due date</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Update status</a>
+              </li>
+              <li class="dropdown__separator"></li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Export as PDF</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Export as Docx</a>
+              </li>
+              <li class="dropdown__separator"></li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Delete items</a>
+              </li>
+            </ul>
+          </div>
+          <pre class="html">
+            <code>&lt;div class="dropdown"&gt;
+  &lt;button class="dropdown-toggle btn btn-default--light btn--dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;
+    Actions
+    &lt;span class="dropdown__caret caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenu1"&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Apply a template&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__separator"&gt;&lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Assign people&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Set a due date&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Update status&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__separator"&gt;&lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Export as PDF&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Export as Docx&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__separator"&gt;&lt;/li&gt;
+      &lt;li class="dropdown__item"&gt;
+        &lt;a class="dropdown__link" href="#"&gt;Delete items&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code>
+          </pre>
+          <hr>
+          <h4>Alternate dropdown menu with icon</h4>
+          <div class="dropdown">
+            <button class="dropdown-toggle btn btn-default--dark btn--dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              <i class="glyphicon glyphicon-list-alt" aria-hidden="true"></i>
+              Apply a template to this item
+              <span class="dropdown__caret caret"></span>
+            </button>
+            <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Employee bio (example template)</a>
+              </li>
+              <li class="dropdown__separator"></li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Services page (example template)</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">People page (example template)</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Product page (example template)</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Blog post for WordPress</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Facebook post</a>
+              </li>
+              <li class="dropdown__item">
+                <a class="dropdown__link" href="#">Twitter post</a>
+              </li>
+            </ul>
+          </div>
+          <pre class="html">
+            <code>&lt;div class="dropdown"&gt;
+  &lt;button class="dropdown-toggle btn btn-default--dark btn--dropdown" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true"&gt;
+    &lt;i class="glyphicon glyphicon-list-alt" aria-hidden="true"&gt;&lt;/i&gt;
+    Apply a template to this item
+    &lt;span class="dropdown__caret caret"&gt;&lt;/span&gt;
+  &lt;/button&gt;
+  &lt;ul class="dropdown-menu" aria-labelledby="dropdownMenu1"&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Employee bio (example template)&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__separator"&gt;&lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Services page (example template)&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;People page (example template)&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Product page (example template)&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Blog post for WordPress&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Facebook post&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class="dropdown__item"&gt;
+      &lt;a class="dropdown__link" href="#"&gt;Twitter post&lt;/a&gt;
+    &lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/div&gt;</code>
+          </pre>
+
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

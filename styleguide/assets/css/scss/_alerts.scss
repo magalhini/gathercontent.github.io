@@ -1,0 +1,49 @@
+.alert {
+  border-radius: 4px;
+  color: #36434c;
+  font-size: 14px;
+  padding: 10px 15px;
+  & + & {
+    margin-top: 10px;
+  }
+  i {
+    font-size: 18px;
+    margin-right: 5px;
+    vertical-align: text-top;
+  }
+}
+
+.alert--with-btn {
+  clear: both;
+  overflow: hidden;
+  padding: 10px;
+  .alert__message {
+    display: inline-block;
+    margin: 7px 0 7px 5px;
+    vertical-align: top;
+  }
+  .btn {
+    float: right;
+  }
+}
+
+.alert--red {
+  background-color: #f7adad;
+}
+
+.alert--yellow {
+  background-color: #feda88;
+}
+
+.alert--green {
+  background-color: #bceac4;
+}
+
+.alert--blue {
+  background-color: #bcd9ea;
+}
+
+.alert__message {
+  color: rgba(0,0,0,.6);
+  margin: 0;
+}

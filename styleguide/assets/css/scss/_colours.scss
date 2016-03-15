@@ -1,0 +1,23 @@
+.color-block {
+  font-size: 12px;
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.color-block__inner {
+  border-radius: 4px 4px 0 0;
+  font-weight: 500;
+  min-height: 70px;
+}
+
+.color-block__name {
+  border: 1px solid #f1f6f7;
+  border-radius: 0 0 4px 4px;
+  border-top: none;
+  code {
+    -webkit-font-smoothing: auto;
+    display: block;
+    font-weight: 500;
+    padding: 10px 0;
+  }
+}

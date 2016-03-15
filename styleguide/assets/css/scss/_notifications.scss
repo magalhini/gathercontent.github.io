@@ -1,0 +1,58 @@
+.trial-bar {
+  padding: 15px 0;
+  text-align: center;
+  & + & {
+    margin-top: 10px;
+  }
+}
+
+.trial-bar__url {
+  text-decoration: none;
+}
+
+.trial-bar--blue {
+  background-color: #428ce8;
+  .trial-bar__url {
+    color: #fff;
+  }
+}
+
+.trial-bar--red {
+  background-color: #d94c49;
+  .trial-bar__url {
+    color: #fff;
+  }
+}
+
+.trial-bar--yellow {
+  background-color: #ffc748;
+  .trial-bar__url {
+    color: #fff;
+  }
+}
+
+.notification {
+  background-color: #fff;
+  border: 1px solid #e6eaed;
+  border-radius: 0 0 4px 4px;
+  box-shadow: 0 0 4px rgba(0, 0, 0, .2);
+  margin: 0 auto;
+  max-width: 520px;
+  /* box-shadow: 0 1px 1px rgba(0,0,0,0.25),0 0 1px rgba(0,0,0,0.35); */
+  padding: 10px 15px;
+  top: -1px;
+}
+
+.notification__message {
+  margin: 0;
+}
+
+.notification__close {
+  color: inherit;
+  font-size: 18px;
+  line-height: 22px;
+  font-family: sans-serif;
+  font-weight: 500;
+  text-decoration: none;
+  float: right;
+}
