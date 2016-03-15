@@ -2102,7 +2102,8 @@ body {
   text-decoration: none; }
 
 .sidebar__link--active {
-  font-weight: 600; }
+  font-weight: 600;
+  color: #00ABC2; }
 
 .sidebar__item:after {
   background: url(../img/forward.png);
