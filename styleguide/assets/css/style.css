@@ -772,7 +772,7 @@ h6 {
   font-weight: 500; }
 
 strong {
-  font-weight: 600; }
+  font-weight: 500; }
 
 hr {
   border: none;
@@ -802,7 +802,7 @@ a {
 .section__tag {
   display: inline-block;
   font-size: 12px;
-  font-weight: 600;
+  font-weight: 500;
   margin-bottom: 5px;
   text-transform: uppercase; }
 
@@ -843,7 +843,7 @@ code {
 .gc-table__heading {
   color: #6f7c82;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 500;
   margin: 0; }
 
 .gc-label__heading {
@@ -940,7 +940,7 @@ code {
   box-shadow: none;
   color: #d9d9d9;
   cursor: pointer;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   height: 40px;
   line-height: 40px;
@@ -1877,7 +1877,7 @@ code {
   border-radius: 4px;
   display: inline-block;
   font-size: 10px;
-  font-weight: 600;
+  font-weight: 500;
   height: 23px;
   line-height: 23px;
   margin-left: 3px;
@@ -1997,7 +1997,7 @@ code {
 .project__settings {
   color: inherit; }
   .project__settings i {
-    font-size: 16px; }
+    font-size: 14px; }
 
 .progress-table {
   background-color: #e8eef2;
@@ -2042,8 +2042,8 @@ html,
 body {
   color: #6f7c82;
   font-family: "Whitney SSm A", "Whitney SSm B", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+  font-size: 14px;
+  font-weight: 400;
   height: 100%;
   line-height: 1.6;
   margin: 0;
@@ -2054,7 +2054,8 @@ body {
 .top-bar {
   background-color: #00abc0;
   font-size: 14px;
-  padding: 20px 30px; }
+  padding: 20px 30px;
+  max-width: 100%; }
 
 .top-bar__logo {
   display: inline-block;
@@ -2065,10 +2066,10 @@ body {
 .top-bar__tag {
   color: #fff;
   display: inline-block;
-  font-size: 16px;
-  font-weight: 600;
+  font-size: 14px;
+  font-weight: 500;
   line-height: 1.5;
-  margin-left: 5px; }
+  margin: 0 0 0 15px; }
 
 .nav--main {
   text-align: right; }
@@ -2081,7 +2082,7 @@ body {
 
 .nav__link {
   color: #fff;
-  font-weight: 600;
+  font-weight: 500;
   text-decoration: none; }
 
 /* Sidebar stuff */
@@ -2096,7 +2097,7 @@ body {
 .sidebar__link {
   color: inherit;
   display: block;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 500;
   text-decoration: none; }
 
